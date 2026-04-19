@@ -1,16 +1,13 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "chez-werth-website",
+  "version": "1.0.0",
+  "description": "Chez Werth — Café & restauration de saison à Delémont",
   "private": true,
-  "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "preview": "vite preview",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "start": "bun run dist/server/index.js --port $PORT"
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python -m http.server 8000"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",

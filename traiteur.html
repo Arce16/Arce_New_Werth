@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service traiteur — Chez Werth, Delémont</title>
+  <meta name="description" content="Service traiteur Chez Werth : apéritifs, plateaux repas et livraison en entreprise à Delémont. Carte de saison, produits locaux.">
+  <meta property="og:title" content="Service traiteur — Chez Werth">
+  <meta property="og:description" content="Apéritifs, plateaux repas et livraison en entreprise. Carte de saison, produits locaux.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-brand">
+        <img src="/assets/werth/logo.png" alt="Chez Werth logo">
+        <a href="/">Chez Werth</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/histoire.html">Notre histoire</a></li>
+        <li><a href="/traiteur.html">Service traiteur</a></li>
+        <li><a href="/patisseries.html">Pâtisseries</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="position: relative; background-image: url('/assets/werth/traiteur-cover.jpg'); background-size: cover; background-position: center;">
+      <img src="/assets/werth/traiteur-cover.jpg" alt="Service traiteur" class="hero-image">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(34, 32, 30, 0.6), rgba(34, 32, 30, 0.8)); z-index: -1;"></div>
+      <div class="hero-content" style="text-align: center;">
+        <p class="hero-subtitle">Service traiteur</p>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">La cuisine Werth, <em class="italic text-accent">livrée à vous</em></h1>
+        <p class="hero-text" style="max-width: 50rem; margin: 0 auto;">
+          Carte de saison, produits locaux, dressage soigné — pour vos déjeuners d'entreprise, séminaires, anniversaires ou apéritifs entre amis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section style="padding: 5rem 1.25rem;">
+      <div class="section-inner">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+          <div class="card" style="padding: 1.75rem; border-radius: 0.5rem;">
+            <h3 class="font-display" style="font-size: 1.125rem; margin-bottom: 0.75rem;">Plats à l'emporter</h3>
+            <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">Une carte de saison qui change chaque semaine, prête à emporter.</p>
+          </div>
+          <div class="card" style="padding: 1.75rem; border-radius: 0.5rem;">
+            <h3 class="font-display" style="font-size: 1.125rem; margin-bottom: 0.75rem;">Livraison en entreprise</h3>
+            <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">Vos repas livrés directement au bureau (dès 4 plats).</p>
+          </div>
+          <div class="card" style="padding: 1.75rem; border-radius: 0.5rem;">
+            <h3 class="font-display" style="font-size: 1.125rem; margin-bottom: 0.75rem;">Apéritifs et plateaux</h3>
+            <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">Bouchées salées et sucrées pour vos événements professionnels et privés.</p>
+          </div>
+          <div class="card" style="padding: 1.75rem; border-radius: 0.5rem;">
+            <h3 class="font-display" style="font-size: 1.125rem; margin-bottom: 0.75rem;">Pauses café</h3>
+            <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">Cafés, viennoiseries et pâtisseries maison pour vos réunions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-paper">
+      <div class="section-inner">
+        <div class="contact-grid" style="gap: 3rem;">
+          <img src="/assets/werth/repas-emporter.jpg" alt="Plats à l'emporter" 
+               style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); order: 1;">
+          <div style="order: 2;">
+            <p class="text-xs uppercase tracking-widest text-accent" style="margin-bottom: 0.75rem;">Comment ça marche</p>
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Simple, gourmand, ponctuel</h2>
+            <ol style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 2rem; display: flex; gap: 1.5rem;">
+                <span class="font-display" style="font-size: 2rem; color: var(--accent); flex-shrink: 0;">01</span>
+                <div>
+                  <h4 class="font-display" style="margin-bottom: 0.25rem;">Choisissez</h4>
+                  <p style="font-size: 0.875rem; color: var(--muted-foreground);">Consultez la carte de la semaine et sélectionnez vos plats.</p>
+                </div>
+              </li>
+              <li style="margin-bottom: 2rem; display: flex; gap: 1.5rem;">
+                <span class="font-display" style="font-size: 2rem; color: var(--accent); flex-shrink: 0;">02</span>
+                <div>
+                  <h4 class="font-display" style="margin-bottom: 0.25rem;">Commandez</h4>
+                  <p style="font-size: 0.875rem; color: var(--muted-foreground);">Passez commande par téléphone ou par email avant midi la veille.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 1.5rem;">
+                <span class="font-display" style="font-size: 2rem; color: var(--accent); flex-shrink: 0;">03</span>
+                <div>
+                  <h4 class="font-display" style="margin-bottom: 0.25rem;">Recevez</h4>
+                  <p style="font-size: 0.875rem; color: var(--muted-foreground);">Nous livrons directement chez vous ou au bureau (dès 4 plats).</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carte Section -->
+    <section style="padding: 6rem 1.25rem;">
+      <div class="section-inner">
+        <p class="text-center text-xs uppercase tracking-widest text-accent mb-3">La carte traiteur</p>
+        <h2 class="section-title">Notre dossier de présentation</h2>
+        
+        <div class="image-grid-2col" style="margin-top: 4rem; margin-bottom: 4rem;">
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/traiteur-1.jpg" alt="Carte traiteur 1"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/traiteur-2.jpg" alt="Carte traiteur 2"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/presentation-1.jpg" alt="Présentation 1"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/presentation-2.jpg" alt="Présentation 2"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/presentation-3.jpg" alt="Présentation 3"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+          <div class="group overflow-hidden rounded-sm shadow-2xl">
+            <img src="/assets/werth/presentation-4.jpg" alt="Présentation 4"
+                 style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.3s ease;">
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="/contact.html" class="btn" style="background-color: var(--foreground); color: var(--background); padding: 1rem 2.5rem; font-size: 0.875rem; font-weight: 500; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+            Demander un devis
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Chez Werth</h3>
+        <p style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.75); margin-bottom: 1.5rem;">
+          Café intense, pâtisseries maison, et petits plats de saison au cœur de Delémont.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Nous trouver</h3>
+        <ul>
+          <li><a href="https://maps.google.com/?q=Place+de+la+Gare+14,+2800+Delémont" target="_blank">Pl. de la Gare 14, 2800 Delémont</a></li>
+          <li style="margin-top: 1rem;"><a href="tel:+41324220000">+41 32 422 00 00</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/histoire.html">Notre histoire</a></li>
+          <li><a href="/traiteur.html">Service traiteur</a></li>
+          <li><a href="/patisseries.html">Pâtisseries</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Chez Werth. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
