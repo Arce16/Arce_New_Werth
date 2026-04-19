@@ -1,0 +1,131 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Chez Werth — Swiss bistro design system
+ * Cream paper background, espresso ink, warm terracotta accent.
+ * Display: Playfair Display. Body: Inter.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-terracotta: var(--terracotta);
+  --color-olive: var(--olive);
+  --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Brand */
+  --cream: oklch(0.972 0.018 85);
+  --ink: oklch(0.22 0.025 40);
+  --terracotta: oklch(0.58 0.13 38);
+  --olive: oklch(0.45 0.05 110);
+
+  --background: oklch(0.972 0.018 85);
+  --foreground: oklch(0.22 0.025 40);
+  --card: oklch(0.985 0.012 85);
+  --card-foreground: oklch(0.22 0.025 40);
+  --popover: oklch(0.985 0.012 85);
+  --popover-foreground: oklch(0.22 0.025 40);
+  --primary: oklch(0.22 0.025 40);
+  --primary-foreground: oklch(0.972 0.018 85);
+  --secondary: oklch(0.93 0.025 80);
+  --secondary-foreground: oklch(0.22 0.025 40);
+  --muted: oklch(0.93 0.025 80);
+  --muted-foreground: oklch(0.45 0.03 50);
+  --accent: oklch(0.58 0.13 38);
+  --accent-foreground: oklch(0.985 0.012 85);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.985 0.012 85);
+  --border: oklch(0.88 0.02 75);
+  --input: oklch(0.88 0.02 75);
+  --ring: oklch(0.58 0.13 38);
+}
+
+.dark {
+  --background: oklch(0.22 0.025 40);
+  --foreground: oklch(0.972 0.018 85);
+  --card: oklch(0.27 0.025 40);
+  --card-foreground: oklch(0.972 0.018 85);
+  --popover: oklch(0.27 0.025 40);
+  --popover-foreground: oklch(0.972 0.018 85);
+  --primary: oklch(0.972 0.018 85);
+  --primary-foreground: oklch(0.22 0.025 40);
+  --secondary: oklch(0.32 0.025 40);
+  --secondary-foreground: oklch(0.972 0.018 85);
+  --muted: oklch(0.32 0.025 40);
+  --muted-foreground: oklch(0.75 0.02 60);
+  --accent: oklch(0.62 0.13 38);
+  --accent-foreground: oklch(0.22 0.025 40);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.62 0.13 38);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .bg-paper {
+    background-color: var(--cream);
+    background-image:
+      radial-gradient(oklch(0.85 0.04 70 / 0.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .divider-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 12px 2px;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 2px;
+  }
+}
