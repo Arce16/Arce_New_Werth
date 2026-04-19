@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "start": "bun dist/server/index.js"
+    "start": "bun run dist/server/index.js --port $PORT"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
